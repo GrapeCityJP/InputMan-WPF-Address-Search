@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Address_Search_App</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="新しいフォルダー\**" />
+    <EmbeddedResource Remove="新しいフォルダー\**" />
+    <None Remove="新しいフォルダー\**" />
+    <Page Remove="新しいフォルダー\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="licenses.licx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="licenses.licx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GrapeCity.Windows.JPAddress" Version="2.0.3" />
+    <PackageReference Include="GrapeCity.WPF.InputMan" Version="2.0.3" />
+  </ItemGroup>
+
+</Project>

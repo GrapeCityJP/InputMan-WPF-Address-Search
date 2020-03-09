@@ -1,0 +1,19 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Address_Search_App"
+        xmlns:im="http://schemas.grapecity.com/windows/2010/inputman" xmlns:jpaddress="http://schemas.grapecity.com/windows/2010/jpaddress" x:Class="Address_Search_App.MainWindow"
+        mc:Ignorable="d"
+        Title="郵便番号検索" Height="250" Width="800" Background="LightGray">
+    <Grid>
+        <Label x:Name="label1"  Content="郵便番号：" HorizontalAlignment="Left" Margin="32,50,0,0" VerticalAlignment="Top" FontSize="24" Width="128"/>
+        <im:GcMask x:Name="gcmask1" HorizontalAlignment="Left" Height="38" Margin="160,50,0,0" VerticalAlignment="Top" Width="280" FontSize="24" InputMethod.PreferredImeState="Off" WatermarkDisplayNull="＜ここに郵便番号を入力＞" WatermarkDisplayNullForeground="LightGray" FieldSet="〒\D{3}-\D{4}"/>
+        <Label x:Name="label2"  Content="住所：" HorizontalAlignment="Left" Margin="80,101,0,0" VerticalAlignment="Top" FontSize="24" Width="75"/>
+        <im:GcTextBox x:Name="gctextbox1" HorizontalAlignment="Left" Height="38" Margin="160,100,0,0" VerticalAlignment="Top" Width="570" FontSize="24"  WatermarkDisplayNull="＜ここに住所を入力＞" WatermarkDisplayNullForeground="LightGray"/>
+        <Button x:Name="button1" Content="住所検索" HorizontalAlignment="Left" Margin="450,60,0,0" VerticalAlignment="Top" FontSize="18" Width="100" Click="button1_Click"/>
+        <jpaddress:GcJPAddress x:Name="gcjpaddress1" HorizontalAlignment="Left" Height="45" Margin="100,0,0,0" VerticalAlignment="Top" Width="100"/>
+
+    </Grid>
+</Window>
