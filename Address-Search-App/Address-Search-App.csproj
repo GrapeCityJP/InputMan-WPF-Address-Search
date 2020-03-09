@@ -27,4 +27,19 @@
     <PackageReference Include="GrapeCity.WPF.InputMan" Version="2.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="JIGYOSYO.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="JPAddressDBTimeStamp.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="KEN_ALL.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="shigai_list.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

@@ -26,6 +26,11 @@ namespace Address_Search_App
             InitializeComponent();
         }
 
+        private void RegistorEventHadler()
+        {
+            button1.Click += new RoutedEventHandler(button1_Click);
+        }
+
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             IEnumerable<AddressInfo> addressInfo1 = gcjpaddress1.GetAddress(gcmask1.Value, false, ZipCodeQueryMode.GeneralZipCode);
